@@ -1,5 +1,6 @@
-package dev.drf.tetris.base;
+package dev.drf.tetris.base.position;
 
+import dev.drf.tetris.core.position.FigureRotation;
 import dev.drf.tetris.core.position.RotateDirection;
 
 import java.util.Arrays;
@@ -15,7 +16,7 @@ final class TetrisRotateUtil {
     private TetrisRotateUtil() {
     }
 
-    static RotateDirection rotate(RotateDirection direction, TetrisRotate rotation) {
+    static RotateDirection rotate(RotateDirection direction, FigureRotation rotation) {
         int index = DIRECTIONS_CLOCKWISE.indexOf(direction);
 
         if (rotation == TetrisRotate.LEFT) {
