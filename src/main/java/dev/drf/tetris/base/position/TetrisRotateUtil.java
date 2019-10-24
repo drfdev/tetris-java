@@ -25,7 +25,7 @@ final class TetrisRotateUtil {
             index++;
         }
 
-        if (index <= 0) {
+        if (index < 0) {
             index = DIRECTIONS_CLOCKWISE.size() - 1;
         }
         if (index >= DIRECTIONS_CLOCKWISE.size()) {
